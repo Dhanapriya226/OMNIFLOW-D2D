@@ -1,1 +1,37 @@
+import streamlit as st
+from modules.demand import demand_forecasting
+from modules.inventory import inventory_analysis
+from modules.logistics import logistics_dashboard
+from modules.ai_insights import ai_insights
+
+st.set_page_config(
+    page_title="OmniFlow D2D",
+    page_icon="📦",
+    layout="wide"
+)
+
+st.title("📦 OmniFlow D2D")
+st.subheader("AI-Powered Demand-to-Delivery Optimization System")
+
+menu = st.sidebar.radio(
+    "Navigation",
+    [
+        "Demand Intelligence",
+        "Inventory Optimization",
+        "Predictive Logistics",
+        "AI Insights"
+    ]
+)
+
+if menu == "Demand Intelligence":
+    demand_forecasting()
+
+elif menu == "Inventory Optimization":
+    inventory_analysis()
+
+elif menu == "Predictive Logistics":
+    logistics_dashboard()
+
+elif menu == "AI Insights":
+    ai_insights()
 
