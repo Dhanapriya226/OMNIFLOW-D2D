@@ -1,5 +1,5 @@
 import streamlit as st
-from modules.demand import demand_forecasting
+import demand_forecasting
 from modules.inventory import inventory_analysis
 from modules.logistics import logistics_dashboard
 from modules.ai_insights import ai_insights
