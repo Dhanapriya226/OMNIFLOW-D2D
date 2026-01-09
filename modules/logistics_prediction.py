@@ -1,3 +1,4 @@
+import streamlit as st
 def logistics_dashboard():
-    print("Logistics module loaded successfully!")
-
+    st.header("🚚 Predictive Logistics")
+    st.write("This is the logistics module.")
