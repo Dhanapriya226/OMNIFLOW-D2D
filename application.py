@@ -1,8 +1,8 @@
 import streamlit as st
 from modules.demand_forecasting import demand_forecasting
-from modules.inventory import inventory_analysis
-from modules.logistics import logistics_dashboard
-from modules.ai_insights import ai_insights
+from modules.inventory_optimization import inventory_analysis
+from modules.logistics_prediction import logistics_dashboard
+from modules.ai_decision_engine import ai_insights
 
 st.set_page_config(
     page_title="OmniFlow D2D",
